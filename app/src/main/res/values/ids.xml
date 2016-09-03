@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="SectorActivity_GridView" type="id"/>
+
+    <item name="LoadActivity_ImageView" type="id"/>
+    <item name="LoadActivity_ProgressBar" type="id"/>
+
+    <item name="SectorAdapter_ImageView" type="id"/>
+    <item name="SectorAdapter_TextView" type="id"/>
+
+    <item name="ListGroupsActivity_ListView" type="id"/>
+
+    <item name="ListCompanies_ListView" type="id"/>
+
+    <item name="CompanyActivity_banner" type="id"/>
+    <item name="CompanyActivity_logo" type="id"/>
+    <item name="CompanyActivity_company" type="id"/>
+    <item name="CompanyActivity_sector" type="id"/>
+    <item name="CompanyActivity_phone" type="id"/>
+    <item name="CompanyActivity_description" type="id"/>
+</resources>

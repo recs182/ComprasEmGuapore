@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.macropublicidade.comprasemguapore.CompanyActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:id="@id/CompanyActivity_banner"
+        android:background="@color/colorAccent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="115dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp"
+                    android:paddingTop="8dp"
+                    android:paddingStart="120dp"
+                    android:paddingEnd="10dp"
+                    android:background="@color/colorBackground">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@id/CompanyActivity_company"
+                        android:text="@string/CompanyActivity_company"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@id/CompanyActivity_sector"
+                        android:text="@string/CompanyActivity_sector"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorGray"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@id/CompanyActivity_logo"
+                    android:background="@color/colorAccent"
+                    android:layout_marginStart="10dp"
+                    android:padding="1dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@id/CompanyActivity_description"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorGray"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

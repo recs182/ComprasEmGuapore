@@ -1,0 +1,16 @@
+<resources>
+    <string name="Application_Label">ComprasGuaporé</string>
+    <string name="SectorActivity_Label">Compras Em Guaporé</string>
+
+    <string name="DataHandler_Toast_message">Não conseguimos sincronizar os dados</string>
+
+    <string name="SectorAdapter_TextView">Setor</string>
+
+    <string name="CompanyActivity_company">Empresa</string>
+    <string name="CompanyActivity_sector">Setor</string>
+    <string name="CompanyActivity_phone">Telefone</string>
+
+    <string name="Lorem_Ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum ipsum et magna feugiat, at semper velit pretium. Fusce eu venenatis urna. Ut efficitur nulla odio, nec aliquet mauris ullamcorper eget. Nunc diam neque, commodo vitae lorem at, congue sagittis risus. Sed ac interdum sapien, vestibulum euismod augue. Etiam malesuada ante eget nisi commodo tempor. Aenean pulvinar consequat ultrices. Duis imperdiet laoreet nibh, vitae feugiat velit finibus eget. Phasellus nunc mauris, vestibulum at sodales nec, efficitur sagittis ipsum.
+
+Donec egestas risus mauris, eget malesuada augue sodales ac. Fusce a aliquam metus, ut pulvinar lorem. Etiam ut neque interdum, gravida erat in, congue neque. Mauris dictum varius tincidunt. Nullam ullamcorper est a tortor iaculis, mollis euismod enim egestas. Praesent eget dignissim nunc. Aliquam erat volutpat. Aliquam nibh nibh, sollicitudin vel arcu at, tristique dapibus augue. Pellentesque mi dolor, lacinia eu tristique in, lobortis ac justo. Nullam nec pulvinar urna. Donec eget efficitur odio. Nullam placerat lobortis augue nec vulputate. Fusce pretium auctor ligula nec cursus. Mauris egestas nunc eu lacinia feugiat. Vestibulum lacinia enim orci, at fringilla quam feugiat a. Duis ultrices tincidunt felis, et accumsan ligula viverra ut.</string>
+</resources>

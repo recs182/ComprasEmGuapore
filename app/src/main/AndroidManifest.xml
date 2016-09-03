@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.macropublicidade.comprasemguapore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/Application_Label"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoadActivity"
+            android:label="@string/Application_Label"
+            android:noHistory="true"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SectorActivity"
+            android:label="@string/SectorActivity_Label" />
+        <activity android:name=".ListGroupsActivity" />
+        <activity android:name=".ListCompaniesActivity" />
+        <activity android:name=".CompanyActivity"></activity>
+    </application>
+
+</manifest>
