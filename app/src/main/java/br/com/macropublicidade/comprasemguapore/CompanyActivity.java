@@ -42,13 +42,21 @@ public class CompanyActivity extends AppCompatActivity {
         Picasso.with(this).load(url_logo[0] + company.getId().toString() + url_logo[1]).fit().placeholder(R.drawable.default_logo).into(logo);
 
         title.setText( company.getCompany() );
-
         if( group.getName().equals("Único") ){
             sector_name.setText( sector.getName() );
         }else{
             sector_name.setText( group.getName() );
         }
 
-        description.setText( company.getDescription() );
+        this.textViewValue( description, company.getDescription() );
     }
+
+    private void textViewValue( TextView view, String value ){
+        if( value.length() > 0 ){
+            view.setText( value );
+        }else{
+            view.setVisibility(TextView.GONE);
+        }
+    }
+
 }
