@@ -10,4 +10,9 @@
     <string name="CompanyActivity_sector">Setor</string>
     <string name="CompanyActivity_phone">Telefone</string>
 
+    <string name="CompanyActivity_webpage">Site</string>
+    <string name="CompanyActivity_facebook">Facebook</string>
+    <string name="CompanyActivity_instagram">Instagram</string>
+    <string name="CompanyActivity_whatsapp">Whatsapp</string>
+
 </resources>

@@ -18,4 +18,8 @@
     <item name="CompanyActivity_sector" type="id"/>
     <item name="CompanyActivity_phone" type="id"/>
     <item name="CompanyActivity_description" type="id"/>
+    <item name="CompanyActivity_webpage" type="id"/>
+    <item name="CompanyActivity_facebook" type="id"/>
+    <item name="CompanyActivity_instagram" type="id"/>
+    <item name="CompanyActivity_whatsapp" type="id"/>
 </resources>

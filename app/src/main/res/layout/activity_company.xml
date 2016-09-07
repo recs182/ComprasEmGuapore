@@ -92,32 +92,56 @@
                     android:layout_marginBottom="10dp">
 
                     <Button
+                        style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:text="www"/>
+                        android:id="@id/CompanyActivity_webpage"
+                        android:text="@string/CompanyActivity_webpage"
+                        android:textSize="10sp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:drawableStart="@drawable/www"
+                        android:clickable="true"/>
 
                     <Button
+                        style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:text="fb"/>
+                        android:id="@id/CompanyActivity_facebook"
+                        android:text="@string/CompanyActivity_facebook"
+                        android:textSize="10sp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:drawableStart="@drawable/facebook"
+                        android:clickable="true"/>
 
                     <Button
+                        style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:text="inst"/>
+                        android:id="@+id/CompanyActivity_instagram"
+                        android:text="@string/CompanyActivity_instagram"
+                        android:textSize="10sp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:drawableStart="@drawable/instagram"
+                        android:clickable="true"/>
 
                     <Button
+                        style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:text="wapp"/>
+                        android:id="@id/CompanyActivity_whatsapp"
+                        android:text="@string/CompanyActivity_whatsapp"
+                        android:textSize="10sp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:drawableStart="@drawable/whatsapp"
+                        android:clickable="true"/>
 
                 </LinearLayout>
 
