@@ -1,7 +1,10 @@
 package br.com.macropublicidade.comprasemguapore;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,6 +18,10 @@ import br.com.macropublicidade.comprasemguapore.models.Sector;
 
 public class CompanyActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private Group group;
+    private Sector sector;
+    private Company company;
+
     private String[] url_banner = new String[]{"http://www.comprasemguapore.com.br/images/companies/banners/", "_banner.jpg"};
     private String[] url_logo = new String[]{"http://www.comprasemguapore.com.br/images/companies/logos/", "_logo.jpg"};
 
@@ -24,9 +31,15 @@ public class CompanyActivity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_company);
 
         final Bundle extras = getIntent().getExtras();
-        Group group = (Group) extras.getSerializable("group");
-        Sector sector = (Sector) extras.getSerializable("sector");
-        Company company = (Company) extras.getSerializable("company");
+        group = (Group) extras.getSerializable("group");
+        sector = (Sector) extras.getSerializable("sector");
+        company = (Company) extras.getSerializable("company");
+
+        Log.d("COMPANY_DIVIDER", "------------------------");
+        Log.d("COMPANY_WEBPAGE", " page " + company.getWebpage());
+        Log.d("COMPANY_FACEBOOK", company.getFacebook());
+        Log.d("COMPANY_INSTAGRAM", " inst " + company.getInstagram());
+        Log.d("COMPANY_WHATSAPP", company.getWhatsapp());
 
         setTitle( company.getCompany() );
 
@@ -60,7 +73,7 @@ public class CompanyActivity extends AppCompatActivity implements View.OnClickLi
             sector_name.setText( group.getName() );
         }
 
-        this.textviewText( description, company.getDescription() );
+        this.textViewVisibility( description, company.getDescription() );
 
         this.buttonVisibility( website, company.getWebpage() );
         this.buttonVisibility( facebook, company.getFacebook() );
@@ -68,7 +81,31 @@ public class CompanyActivity extends AppCompatActivity implements View.OnClickLi
         this.buttonVisibility( whatsapp, company.getWhatsapp() );
     }
 
-    private void textviewText( TextView view, String value ){
+    @Override
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.CompanyActivity_webpage:
+
+                String webpage = company.getWebpage();
+                if( !webpage.startsWith("https://") ){
+                    webpage = "https://" + webpage;
+                }
+
+                Intent intent_webpage = new Intent(Intent.ACTION_VIEW);
+                intent_webpage.setData( Uri.parse(webpage) );
+                startActivity(intent_webpage);
+
+                break;
+            case R.id.CompanyActivity_facebook:
+                break;
+            case R.id.CompanyActivity_instagram:
+                break;
+            case R.id.CompanyActivity_whatsapp:
+                break;
+        }
+    }
+
+    private void textViewVisibility( TextView view, String value ){
         String tested = this.preventNullValue( value );
         if( tested.isEmpty() ){
             view.setVisibility(TextView.GONE);
@@ -89,20 +126,6 @@ public class CompanyActivity extends AppCompatActivity implements View.OnClickLi
             return "";
         }
         return value;
-    }
-
-    @Override
-    public void onClick(View view){
-        switch (view.getId()){
-            case R.id.CompanyActivity_webpage:
-                break;
-            case R.id.CompanyActivity_facebook:
-                break;
-            case R.id.CompanyActivity_instagram:
-                break;
-            case R.id.CompanyActivity_whatsapp:
-                break;
-        }
     }
 
 }
