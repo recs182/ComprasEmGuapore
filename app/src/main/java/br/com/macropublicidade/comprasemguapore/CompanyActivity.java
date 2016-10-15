@@ -62,7 +62,7 @@ public class CompanyActivity extends AppCompatActivity implements View.OnClickLi
         whatsapp.setOnClickListener(this);
 
         //TODO: download banner to phone, check if image exists in phone and load it
-        //TODO: load logos in ListCompaniesActivity jhjkh
+        //TODO: load logos in ListCompaniesActivity
         Picasso.with(this).load(url_banner[0] + company.getId().toString() + url_banner[1]).fit().into(banner);
         Picasso.with(this).load(url_logo[0] + company.getId().toString() + url_logo[1]).fit().placeholder(R.drawable.default_logo).into(logo);
 
