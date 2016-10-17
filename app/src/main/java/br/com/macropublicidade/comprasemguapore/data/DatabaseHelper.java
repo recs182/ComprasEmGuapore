@@ -54,6 +54,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sql.add("CREATE TABLE IF NOT EXISTS subgrupo (id integer primary key, id_grupo text, nome text, atualizar text, ativo text)");
         sql.add("CREATE TABLE IF NOT EXISTS horarios (id integer primary key, id_empresa text, dia_semana text, horario1 text, horario2 text, horario3 text, horario4 text, atualizar text, ativo text)");
         sql.add("CREATE TABLE IF NOT EXISTS atualizar (id integer primary key, atualizar text, atualizar_img text, last_login text)");
+        sql.add("CREATE TABLE IF NOT EXISTS galeria (id integer primary key, id_empresa text, imagem text)");
 
         for( String row : sql ){
             db.execSQL(row);
