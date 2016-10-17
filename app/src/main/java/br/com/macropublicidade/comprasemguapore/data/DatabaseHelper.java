@@ -250,6 +250,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             companies.add(company);
         }
         c.close();
+
+        //TODO: implement get Gallery of company
+
         db.close();
         return companies;
     }
