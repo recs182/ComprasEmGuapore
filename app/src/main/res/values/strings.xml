@@ -15,4 +15,6 @@
     <string name="CompanyActivity_instagram">Instagram</string>
     <string name="CompanyActivity_whatsapp">Whatsapp</string>
 
+    <string name="ListCompaniesAdapter_company">Empresa</string>
+
 </resources>

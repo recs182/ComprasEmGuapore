@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import java.util.List;
 
+import br.com.macropublicidade.comprasemguapore.adapters.ListCompaniesAdapter;
 import br.com.macropublicidade.comprasemguapore.data.DatabaseHelper;
 import br.com.macropublicidade.comprasemguapore.models.Company;
 import br.com.macropublicidade.comprasemguapore.models.Group;
@@ -33,12 +34,10 @@ public class ListCompaniesActivity extends AppCompatActivity {
         }
 
         DatabaseHelper db_helper = new DatabaseHelper(this);
-
         final List<Company> list_companies = db_helper.getCompanies( group.getId().toString() );
 
         ListView listView = (ListView) findViewById(R.id.ListCompanies_ListView);
-        ArrayAdapter<Company> adapater = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list_companies);
-        listView.setAdapter(adapater);
+        listView.setAdapter( new ListCompaniesAdapter(ListCompaniesActivity.this, list_companies) );
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -49,7 +48,6 @@ public class ListCompaniesActivity extends AppCompatActivity {
                 Intent intentCompany = new Intent(ListCompaniesActivity.this, CompanyActivity.class);
                 intentCompany.putExtras(extras);
                 startActivity(intentCompany);
-
             }
         });
     }

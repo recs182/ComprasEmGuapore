@@ -12,6 +12,9 @@
 
     <item name="ListCompanies_ListView" type="id"/>
 
+    <item name="ListCompaniesAdapter_TextView" type="id"/>
+    <item name="ListCompaniesAdapter_ImageView" type="id"/>
+
     <item name="CompanyActivity_banner" type="id"/>
     <item name="CompanyActivity_logo" type="id"/>
     <item name="CompanyActivity_company" type="id"/>

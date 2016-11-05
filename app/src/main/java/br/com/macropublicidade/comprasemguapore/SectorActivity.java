@@ -30,12 +30,11 @@ public class SectorActivity extends AppCompatActivity {
         grid_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Sector sector = list_sectors.get(position);
+            Sector sector = list_sectors.get(position);
 
-                Intent intentListGroups = new Intent(SectorActivity.this, ListGroupsActivity.class);
-                intentListGroups.putExtra("sector", sector);
-                startActivity(intentListGroups);
-
+            Intent intentListGroups = new Intent(SectorActivity.this, ListGroupsActivity.class);
+            intentListGroups.putExtra("sector", sector);
+            startActivity(intentListGroups);
             }
         });
 
